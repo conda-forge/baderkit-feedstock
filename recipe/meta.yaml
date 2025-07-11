@@ -1,5 +1,5 @@
 {% set name = "baderkit" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/baderkit-{{ version }}.tar.gz
-  sha256: eea539d3400591c65e72d29dcdbf4cbbe0ee8ce98c89b1ba147a6ad7d79d2cf3
+  sha256: db2b2f4201de1d04e650cb5d5b303526c5f342c8d57e2e6ab5cede205876f8f1
 
 build:
   entry_points:
@@ -25,19 +25,13 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=1.26.0
-    - pandas >=2.1.0
-    - typer >=0.6.1
-    - pymatgen >=2022.1.9
-    - scipy >=1.7.2
-    - numba >=0.59.0
-    - pyvista >=0.44.0
-    - streamlit >=1.40.0
-    - rich >=11.0
-    - trame
-    - trame-vtk
-    - trame-vuetify
-    - nest-asyncio
+    - numpy >=1.26.0,<2.3.1
+    - pandas >=2.1.0,<2.3.0
+    - typer >=0.6.1,<0.16.0
+    - pymatgen >=2022.1.9,<2025.6.14
+    - scipy >=1.7.2,<1.16.0
+    - numba >=0.59.0,<0.61.2
+    - rich >=11.0,<14.0
 
 test:
   imports:
