@@ -31,13 +31,7 @@ requirements:
     - pymatgen >=2022.1.9
     - scipy >=1.7.2
     - numba >=0.59.0
-    - pyvista >=0.44.0
-    - streamlit >=1.40.0
     - rich >=11.0
-    - trame
-    - trame-vtk
-    - trame-vuetify
-    - nest-asyncio
 
 test:
   imports:
