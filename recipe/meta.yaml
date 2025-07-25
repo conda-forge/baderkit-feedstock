@@ -1,5 +1,5 @@
 {% set name = "baderkit" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/baderkit-{{ version }}.tar.gz
-  sha256: db2b2f4201de1d04e650cb5d5b303526c5f342c8d57e2e6ab5cede205876f8f1
+  sha256: 9d880d29b44084d20a4059126782d1841dacd243635101abe590de7ceaf734b1
 
 build:
   entry_points:
