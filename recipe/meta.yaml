@@ -1,5 +1,5 @@
 {% set name = "baderkit" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/baderkit-{{ version }}.tar.gz
-  sha256: 5ca1fa7e188be23baeeae5f9303b12f47ec16dae5e0d2a77c4136279b72b0390
+  sha256: b6d0822cdbb67d1b1eecdb1d72bd75c13ff3a8a2d672c6e937510d5dbf06a60d
 
 build:
   entry_points:
@@ -27,11 +27,11 @@ requirements:
     - python >={{ python_min }}
     - numpy >=1.26.0,<3.0
     - pandas >=2.1.0,<3.0
-    - typer >=0.6.1,<=0.20.0
+    - typer >=0.6.1
     - pymatgen >=2022.1.9,<=2025.10.7
     - scipy >=1.7.2,<2.0
-    - numba >=0.59.0,<=0.62.1
-    - rich >=11.0,<=14.2
+    - numba >=0.59.0,<=0.64.0
+    - rich >=11.0,<=14.3.3
 
 test:
   imports:
